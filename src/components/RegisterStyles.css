@@ -1,0 +1,207 @@
+/* Register Container */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #26a69a;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Register Card */
+.register-card {
+  background: linear-gradient(145deg, #37474f 0%, #263238 100%);
+  padding: 40px 30px;
+  border-radius: 15px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(29, 233, 182, 0.1);
+  position: relative;
+}
+
+/* Register Button/Header */
+.register-title {
+  background: #1de9b6;
+  color: #263238;
+  padding: 12px 0;
+  margin: -10px -10px 30px -10px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  width: calc(100% + 20px);
+  transition: background-color 0.3s ease;
+}
+
+.register-title:hover {
+  background: #26a69a;
+}
+
+.register-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #455a64, #37474f);
+  margin: 0 auto 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #546e7a;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.register-avatar-inner {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #78909c;
+  position: relative;
+  overflow: hidden;
+}
+
+.register-avatar-head {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #37474f;
+}
+
+.register-avatar-body {
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 24px;
+  height: 20px;
+  border-radius: 50% 50% 0 0;
+  background: #37474f;
+}
+
+/* Form Styling */
+.register-form {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.register-input-container {
+  position: relative;
+}
+
+.register-input-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #78909c;
+  font-size: 16px;
+}
+
+/* Input Fields */
+.register-input {
+  width: 100%;
+  padding: 15px 15px 15px 45px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #455a64;
+  color: #b0bec5;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.register-input::placeholder {
+  color: #78909c;
+}
+
+.register-input:focus {
+  background: #546e7a;
+  box-shadow: 0 0 0 2px rgba(29, 233, 182, 0.3);
+}
+
+.register-input[type="date"] {
+  color: #78909c;
+}
+
+.register-input[type="date"]:focus {
+  color: #b0bec5;
+}
+
+/* Register Button */
+.register-button {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #263238;
+  background: #1de9b6;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(29, 233, 182, 0.3);
+  margin-top: 10px;
+}
+
+.register-button:hover {
+  background: #26a69a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(29, 233, 182, 0.4);
+}
+
+.register-button:active {
+  transform: translateY(0);
+}
+
+/* Login Link */
+.register-link {
+  color: #78909c;
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+.register-link a {
+  color: #1de9b6;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.register-link a:hover {
+  color: #26a69a;
+}
+
+@media (max-width: 480px) {
+  .register-card {
+    width: 90%;
+    padding: 30px 20px;
+  }
+  
+  .register-input {
+    padding: 12px 12px 12px 40px;
+  }
+  
+  .register-avatar {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .register-avatar-inner {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .register-form {
+    gap: 15px;
+  }
+}
